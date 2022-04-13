@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equive="X-UA-Compatible" contents="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portofolio Gilang Damar Maulana.</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="display">
+        <div id="time"></div>
+      </div>
+    </div>
+    <script>
+    setInterval(()=>{
+      const time = document.querySelector("#time");
+      let date = new Date();
+      let hours = date.getHours();
+      let minutes = date.getMinutes();
+      let seconds = date.getSeconds();
+    let day_night= "AM";
+    if(hours > 12){
+      day_night = "PM";
+      hours = hours - 12;
+    }
+    if(hours < 10){
+      hours = "0" + hours;
+    }
+    if(minutes < 10){
+        minutes = "0" + minutes;
+    }
+    if(seconds < 10){
+        seconds = "0" + seconds;
+    }
+      time.textContent = hours + ":" + minutes + ":" + seconds + " " + day_night;
+  });
+</script>
+    <section id="main" class="center">
+      <div class="user_info">
+        <h1 class="user_name">GilangDamarMaulana.</h1>
+        <p>College Student</p>
+        <a href="#About" class="btn">About Me</a>
+      </div>
+      <div class="user_img">
+        <img src="me.jpg" >
+      </div>
+    </section>
+
+    <section class="about center" id="About">
+    <div class="center">
+      <h1 class="about_heading">About</h1>
+      <p>
+        My name is Gilang Damar Maulana. I'm a college student in Ahmad Dahlan University.
+        My hobby is playing music like bass and trying new things.
+      </p>
+    </div>
+    </section>
+        
+    <footer class="center">
+      <h1>Stay Connected</h1>
+      <div class="social_media_icons">
+        <a href="https://www.instagram.com/bdfrll/" target="_blank_"
+          ><i class="fab fa-instagram"></i
+        ></a>
+        <a href="https://github.com/gilangdamarmaulana/tekweb2022" target="_blank_"
+          ><i class="fab fa-github"></i
+        ></a>
+        <a href="https://web.facebook.com/gilangdamar.maulana.7/" target="_blank_"
+          ><i class="fab fa-facebook"></i
+        ></a>
+        <a href=" https://twitter.com/BedefourI/" target="_blank_"
+          ><i class="fab fa-twitter"></i
+        ></a>
+        </div>
+    </footer>
+  </body>
+</html>
