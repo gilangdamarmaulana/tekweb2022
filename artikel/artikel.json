@@ -1,0 +1,23 @@
+[
+    {
+        "judul": "Rekomendasi Aplikasi Edit Video HP Android Terbaik & Gratis!",
+        "penulis":"Tim, CNBC Indonesia",
+        "gambar":"https://akcdn.detik.net.id/visual/2018/04/20/556d9453-c68f-4d5a-be0d-2af87ba268ba_169.jpeg?w=715&q=90",
+        "deskripsi":"Untuk memiliki aplikasi edit video Android, Anda bisa mengunduh dengan mudah di Play Store. Bahkan sebagian besar aplikasi-aplikasi tersebut dapat digunakan secara gratis.",
+        "artikel":"artikel1.md"
+    },
+    {
+        "judul": "Trello: Pengertian, Manfaat, dan Cara Menggunakannya untuk Kolaborasi Kerja",
+        "penulis":"Mirza M. Haekal",
+        "gambar":"https://www.niagahoster.co.id/blog/wp-content/uploads/2020/03/cara-menggunakan-Trello-untuk-membuat-team-bagian-2-1024x545.png",
+        "deskripsi":"Di artikel kali ini kami akan membahas mengenai Trello. Aplikasi gratis serba bisa ini merupakan solusi dari masalah-masalah Anda di atas, lho.",
+        "artikel":"artikel2.md"
+    },
+    {
+        "judul": "Bootstrap: Pengertian, Kegunaan, Kelebihan, dan Kekurangannya",
+        "penulis":"Mirza M. Haekal",
+        "gambar":"https://niagaspace.sgp1.digitaloceanspaces.com/blog/wp-content/uploads/2021/08/03101749/Featured-Image-Bootstrap-Pengertian-Kegunaan-Kelebihan-dan-Kekurangannya.jpg",
+        "deskripsi":"Framework open source ini diciptakan pada tahun 2011 oleh Mark Otto dan Jacob Thornton dari Twitter.",
+        "artikel":"artikel3.md"
+    }
+]

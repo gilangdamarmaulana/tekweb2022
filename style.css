@@ -40,7 +40,7 @@
   --secondary-font: 'Work Sans', sans-serif;
 }
 body {
-  background: var(--bg);
+  background: var(--bg) !important;
 }
 .center {
   display: flex;
@@ -75,7 +75,8 @@ p {
 .user_img img {
   width: 30em;
   height: 30em;
-  border-radius: 90%;
+  border-radius: 50%;
+  object-fit:cover;
   margin: 0 20px;
   box-shadow: 0 0 50px rgba(0, 0, 0, 0.479);
 }

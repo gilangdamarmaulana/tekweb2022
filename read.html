@@ -9,7 +9,6 @@
   <link rel="stylesheet" href="style.css" />
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" crossorigin="anonymous" />
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
-  
   <style type="text/css">
     a {
       text-decoration: none;
@@ -21,7 +20,7 @@
     ul {
       padding: 14px
     }
-
+  
     li {
       list-style: none;
       display: inline;
@@ -42,6 +41,7 @@
       height: 50px;
     }
     </style>
+  
 </head>
 
 <body id="app">
@@ -78,61 +78,26 @@
   <nav class="navi">
     <ul>
       <center>
-        <li><a href="#Skills">{{navbar.sk}}</a></li>
-        <li><a href="#">{{navbar.ar}}</a></li>
+        <li><a href="./index.html">Home</a></li>
       </center>
     </ul>
   </nav>
-  <section id="main" class="center">
-    <div class="user_info">
-      <h1 class="user_name">{{header.nama}}</h1>
-      <p>{{header.d}}</p>
-      <a href="#About" class="btn">About Me</a>
-    </div>
-    <div class="user_img">
-      <img src="https://raw.githubusercontent.com/gilangdamarmaulana/tekweb2022/main/me.jpg">
-    </div>
-  </section>
+  
 
-  <section class="about center" id="About">
-    <div class="center">
-      <h1 class="about_heading">About</h1>
-      <p>
-{{header.deskripsi}}
-      </p>
-    </div>
-  </section>
   
-  <section class="skills center" id="Skills">
-    <p class="skill_head">Skills</p>
-    <div class="skill_box center">
-      <div v-for="data in skill.sk" class="box">
-        <p>{{data.Kemampuan}}</p>
-        <i class="btn">{{data.skill}}</i>
-      </div>
-    </div>
-  </section>
-  
-  
-  <section class="skills center" id="Article">
-      <div class="container">
-      <p class="skill_head text-center">Article</p>
-      <div class="row">
-        <div v-for="data in artikel" class="col-md-4 mb-4">
-          <div class="card" style="border-radius: 0; background-color: rgba(255, 255, 255, 0.089);;">
-            <img :src="data.gambar" style="border-radius: 0;" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">{{data.judul}}</h5>
-              <p class="card-text fst-italic fs-6">{{data.penulis}}</p>
-              <p class="card-text fs-6">{{data.deskripsi}}</p>
-              <a :href="'./read.html?article='+data.artikel" type="button" class="btn btn-dark w-100">Baca Artikel</a>
+  <div class="container">
+
+      <section class="skills center" id="Skills">
+          <p class="skill_head">Articles</p>
+          <div class="skill_box center">
+              <div class="row">
+                  <div v-html="article" class="col-md-12 p-5">
+                      
+                </div>
             </div>
-          </div>
         </div>
-        </div>
-      </div>
-      
     </section>
+</div>
 
   <footer class="center">
     <h1>Stay Connected</h1>
