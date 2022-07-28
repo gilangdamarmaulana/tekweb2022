@@ -1,0 +1,239 @@
+API POINT
+
+User
+
+Menampilkan user
+GET: /users
+response:
+[
+  {
+    "id": "",
+    "nama": "",
+    "tentang": "",
+    "ig": "",
+    "git": "",
+    "fb": "",
+    "twitter": ""
+  },
+    ...
+]
+
+
+Menampilkan user tertentu
+GET: /users/[id]
+reponse:
+{
+    "id": "",
+    "nama": "",
+    "tentang": "",
+    "ig": "",
+    "git": "",
+    "fb": "",
+    "twitter": ""
+}
+
+
+Menambahkan user baru
+POST: /user
+data:
+{
+    "nama": "",
+    "tentang": "",
+    "ig": "",
+    "git": "",
+    "fb": "",
+    "twitter": ""
+}
+response:
+true    // if success
+false   // if failure
+
+
+Mengedit user tertentu
+PUT: /user/[id]
+data:
+{
+    "nama": "",
+    "tentang": "",
+    "ig": "",
+    "git": "",
+    "fb": "",
+    "twitter": ""
+}
+response:
+true    // if success
+false   // if failure
+
+
+Menghapus user tertentu
+DELETE: /user/[id]
+response:
+true    // if success
+false   // if failure
+
+
+Artikel
+
+Menampilkan semua artikel
+GET: /artikes
+response:
+[
+  {
+    "id": "",
+    "url": "",
+    "judul": "",
+    "penerbit": "",
+    "des": "",
+    "arti": ""
+  },
+    ...
+]
+
+
+Menampilkan artikel tertentu
+GET: /artikels/[id]
+response:
+{
+    "id": "",
+    "url": "",
+    "judul": "",
+    "penerbit": "",
+    "des": "",
+    "arti": ""
+}
+
+
+Menambahkan artikel
+POST: /artikel
+data:
+{
+    "url": "",
+    "judul": "",
+    "penerbit": "",
+    "des": "",
+    "arti": ""
+}
+response:
+true    // if success
+false   // if failure
+
+
+Mengupdate artikel tertentu
+PUT: /artikel/[id]
+data:
+{
+    "url": "",
+    "judul": "",
+    "penerbit": "",
+    "des": "",
+    "arti": ""
+}
+response:
+true    // if success
+false   // if failure
+
+
+Menghapus artikel tertentu
+DELETE: /artikel/[id]
+response:
+true    // if success
+false   // if failure
+
+
+Portofolio
+Menampilkan semua Portofolio
+GET: /portofolios
+response:
+[
+  {
+    "id":"",
+    "ket":"",
+    "skill":""
+  },
+  ...
+]
+
+
+Menampilkan Portofolio tertentu
+GET: /portofolios/[id]
+response:
+{
+    "ket":"",
+    "skill":""
+}
+
+
+Menambahkan Portofolio
+POST: /portofolio
+data:
+{
+    "ket":"",
+    "skill":""
+}
+response:
+true    // if success
+false   // if failure
+
+
+Memperbarui Portofolio
+PUT: /portofolio/[id]
+data:
+{
+    "ket":"",
+    "skill":""
+}
+response:
+true    // if success
+false   // if failure
+
+
+Menghapus Portofolio 
+DELETE: /portofolio/[id]
+response:
+true    // if success
+false   // if failure
+
+
+
+Desain Database
+berikut adalah desain dari API saya:
+
+mermaid
+classDiagram
+    class User{
+        # id: int
+        + nama: string
+        + tentang: string
+        + ig: string
+        + git: string
+        + fb: string
+        + twitter: string
+        + getAllUser()
+        + getUserById()
+        + updateUser()
+        + createUser()
+        + deleteUser()
+    },
+    class Portofolio{
+        # id: int
+        + ket: string
+        + skill: string
+        + getAllPortofolio()
+        + getPortofolioById()
+        + updatePortofolio()
+        + createPortofolio()
+        + deletePortofolio()
+    },
+    class Artikel{
+        # id: int
+        + url: string
+        + judul: string
+        + penerbit: string
+        + des: string
+        + arti: string
+        + getAllArtikel()
+        + getArtikelById()
+        + updateArtikel()
+        + createArtikel()
+        + deleteArtikel()
+    }
